@@ -127,7 +127,7 @@ public async Task<IActionResult> Index(string movieGenre, string searchString)
                 try
                 {
                     _context.Update(movie);
-                    await _context.SaveChangesAsync(); 
+                    await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
